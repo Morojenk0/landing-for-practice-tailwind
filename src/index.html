@@ -1,13 +1,84 @@
 <!DOCTYPE html>
-<html lang="en" class="bg-[rgb(44,43,45)]">
+<html lang="en" class="bg-black-900">
 	<head>
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>title</title>
+		<title>tailwind-landing-page</title>
 	</head>
-	<body>
-		<header class=""></header>
+	<body class="w-[95%] mx-auto">
+		<header class="">
+			<nav class="flex xl:container md:justify-between items-center">
+				<a class="p-2" href="#"
+					><img class="" src="./images/svg/logo.svg" alt="logo"
+				/></a>
+				<ul class="hidden md:flex space-x-8">
+					<li class="">
+						<a
+							class="p-2 text-white text-base font-graphik hover:underline"
+							href="#"
+							>Home</a
+						>
+					</li>
+					<li class="">
+						<a
+							class="p-2 text-white text-base font-graphik hover:underline"
+							href="#"
+							>Product</a
+						>
+					</li>
+					<li class="">
+						<a
+							class="p-2 text-white text-base font-graphik hover:underline"
+							href="#"
+							>About</a
+						>
+					</li>
+					<li class="">
+						<a
+							class="p-2 text-white text-base font-graphik hover:underline"
+							href="#"
+							>Contant</a
+						>
+					</li>
+				</ul>
+				<button
+					class="w-36 h-14 ml-auto mr-4 md:m-0 border border-solid border-white text-white text-base font-graphik bg-transparent hover:underline"
+				>
+					Login
+				</button>
+				<button
+					class="md:hidden flex box-content p-2 flex-col-reverse items-end justify-between w-10 h-7"
+				>
+					<span class="bg-white w-2/5 h-[5px]"></span>
+					<span class="bg-white w-3/4 h-[5px]"></span>
+					<span class="bg-white w-full h-[5px]"></span>
+				</button>
+			</nav>
+			<article class="mt-20 flex flex-col items-center text-center">
+				<h1
+					class="w-[60%] font-graphik text-[3.25rem] 2xl:text-[5rem] text-white leading-[5.5rem]"
+				>
+					Work at the speed of thought
+				</h1>
+				<p
+					class="w-[60%] mt-6 text-white text-base font-graphik text-center leading-[1.875rem]"
+				>
+					Most calendars are designed for teams. Slate is designed for
+					freelancers who want a simple way to plan their schedule.
+				</p>
+			</article>
+			<button
+				class="w-36 h-14 border-white text-white text-base font-graphik bg-blue hover:underline"
+			>
+				Try For Free
+			</button>
+			<button
+				class="w-36 h-14 border border-solid border-white text-white text-base font-graphik bg-transparent hover:underline"
+			>
+				Learn More
+			</button>
+		</header>
 
 		<main class=""></main>
 

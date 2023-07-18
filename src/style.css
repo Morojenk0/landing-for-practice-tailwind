@@ -1,3 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+	font-family: "Graphik";
+	src: url("./fonts/graphik/GraphikRegular.otf");
+}
+@font-face {
+	font-family: "Roboto";
+	src: url("./fonts/roboto/Roboto-Regular.ttf");
+}
