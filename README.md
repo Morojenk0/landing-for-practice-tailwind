@@ -1,3 +1,3 @@
-# Webpack
+# tailwindcss
 
-Default bundle for building project with tailwind/react
+Landing for first practice with tailwindcss framework
