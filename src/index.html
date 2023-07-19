@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" class="bg-black-900">
 	<head>
 		<meta charset="UTF-8" />
@@ -6,79 +6,82 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>tailwind-landing-page</title>
 	</head>
-	<body class="w-[95%] mx-auto">
+	<body class="mx-auto w-[95%]">
 		<header class="">
-			<nav class="flex xl:container md:justify-between items-center">
+			<nav class="flex items-center xl:container md:justify-between">
 				<a class="p-2" href="#"
 					><img class="" src="./images/svg/logo.svg" alt="logo"
 				/></a>
-				<ul class="hidden md:flex space-x-8">
+				<ul class="hidden space-x-8 md:flex">
 					<li class="">
 						<a
-							class="p-2 text-white text-base font-graphik hover:underline"
+							class="p-2 font-graphik text-base text-white hover:underline"
 							href="#"
 							>Home</a
 						>
 					</li>
 					<li class="">
 						<a
-							class="p-2 text-white text-base font-graphik hover:underline"
+							class="p-2 font-graphik text-base text-white hover:underline"
 							href="#"
 							>Product</a
 						>
 					</li>
 					<li class="">
 						<a
-							class="p-2 text-white text-base font-graphik hover:underline"
+							class="p-2 font-graphik text-base text-white hover:underline"
 							href="#"
 							>About</a
 						>
 					</li>
 					<li class="">
 						<a
-							class="p-2 text-white text-base font-graphik hover:underline"
+							class="p-2 font-graphik text-base text-white hover:underline"
 							href="#"
 							>Contant</a
 						>
 					</li>
 				</ul>
 				<button
-					class="w-36 h-14 ml-auto mr-4 md:m-0 border border-solid border-white text-white text-base font-graphik bg-transparent hover:underline"
+					class="ml-auto mr-4 h-14 w-36 border border-solid border-white bg-transparent font-graphik text-base text-white hover:underline md:m-0"
 				>
 					Login
 				</button>
 				<button
-					class="md:hidden flex box-content p-2 flex-col-reverse items-end justify-between w-10 h-7"
+					class="box-content flex h-7 w-10 flex-col-reverse items-end justify-between p-2 md:hidden"
 				>
-					<span class="bg-white w-2/5 h-[5px]"></span>
-					<span class="bg-white w-3/4 h-[5px]"></span>
-					<span class="bg-white w-full h-[5px]"></span>
+					<span class="h-[5px] w-2/5 bg-white"></span>
+					<span class="h-[5px] w-3/4 bg-white"></span>
+					<span class="h-[5px] w-full bg-white"></span>
 				</button>
 			</nav>
-			<article class="mt-20 flex flex-col items-center text-center">
+			<article class="container mt-20 flex flex-col items-center text-center">
 				<h1
-					class="w-[60%] font-graphik text-[3.25rem] 2xl:text-[5rem] text-white leading-[5.5rem]"
+					class="max-w-sm font-graphik text-[3.25rem] font-medium leading-[5.5rem] text-white md:max-w-3xl md:text-[5rem]"
 				>
 					Work at the speed of thought
 				</h1>
 				<p
-					class="w-[60%] mt-6 text-white text-base font-graphik text-center leading-[1.875rem]"
+					class="mt-6 max-w-sm text-center font-graphik text-base leading-[1.875rem] text-white md:max-w-lg"
 				>
 					Most calendars are designed for teams. Slate is designed for
 					freelancers who want a simple way to plan their schedule.
 				</p>
+				<button
+					class="h-14 w-36 border-white bg-blue font-graphik text-base text-white hover:underline"
+				>
+					Try For Free
+				</button>
+				<button
+					class="h-14 w-36 border border-solid border-white bg-transparent font-graphik text-base text-white hover:underline"
+				>
+					Learn More
+				</button>
 			</article>
-			<button
-				class="w-36 h-14 border-white text-white text-base font-graphik bg-blue hover:underline"
-			>
-				Try For Free
-			</button>
-			<button
-				class="w-36 h-14 border border-solid border-white text-white text-base font-graphik bg-transparent hover:underline"
-			>
-				Learn More
-			</button>
 		</header>
+		<!-- experiments with container and screens
+			rebuild styles for button, mb in Components
+			set up plugin for order classes -->
 
 		<main class=""></main>
 
