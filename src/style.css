@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+/* .header {
+	background: no-repeat
+		linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #0e0e0e 66.15%);
+} */
+
 @font-face {
 	font-family: "Graphik";
 	src: url("./fonts/graphik/GraphikRegular.otf");

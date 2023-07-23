@@ -6,9 +6,10 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>tailwind-landing-page</title>
 	</head>
-	<body class="mx-auto w-[95%]">
-		<header class="">
-			<nav class="flex items-center xl:container md:justify-between">
+	<body class="">
+		<!-- md:w-11/12 lg:w-5/6 xl:w-4/6 -->
+		<header class="relative pb-5 md:pb-40">
+			<nav class="flex container items-center md:justify-between">
 				<a class="p-2" href="#"
 					><img class="" src="./images/svg/logo.svg" alt="logo"
 				/></a>
@@ -55,35 +56,70 @@
 					<span class="h-[5px] w-full bg-white"></span>
 				</button>
 			</nav>
-			<article class="container mt-20 flex flex-col items-center text-center">
-				<h1
-					class="max-w-sm font-graphik text-[3.25rem] font-medium leading-[5.5rem] text-white md:max-w-3xl md:text-[5rem]"
-				>
-					Work at the speed of thought
-				</h1>
-				<p
-					class="mt-6 max-w-sm text-center font-graphik text-base leading-[1.875rem] text-white md:max-w-lg"
-				>
-					Most calendars are designed for teams. Slate is designed for
-					freelancers who want a simple way to plan their schedule.
-				</p>
-				<button
-					class="h-14 w-36 border-white bg-blue font-graphik text-base text-white hover:underline"
-				>
-					Try For Free
-				</button>
-				<button
-					class="h-14 w-36 border border-solid border-white bg-transparent font-graphik text-base text-white hover:underline"
-				>
-					Learn More
-				</button>
-			</article>
+			<section class="mt-20 container">
+				<article class="w-8/12 flex flex-col items-center text-center mx-auto">
+					<h1
+						class="font-graphik text-[3.25rem] font-medium leading-tight text-white lg:leading-[5.5rem] lg:text-[5rem]"
+					>
+						Work at the speed of thought
+					</h1>
+					<p
+						class="mt-6 text-center font-graphik text-base leading-[1.875rem] text-white"
+					>
+						Most calendars are designed for teams. Slate is designed for
+						freelancers who want a simple way to plan their schedule.
+					</p>
+					<div
+						class="flex flex-col space-y-5 mt-14 md:flex-row md:space-x-8 md:space-y-0"
+					>
+						<button
+							class="h-14 w-36 border-white bg-blue font-graphik text-base text-white hover:underline"
+						>
+							Try For Free
+						</button>
+						<button
+							class="h-14 w-36 border border-solid border-white bg-transparent font-graphik text-base text-white hover:underline"
+						>
+							Learn More
+						</button>
+					</div>
+				</article>
+			</section>
+			<section class="mt-14">
+				<img
+					class="mx-auto md:hidden w-screen"
+					src="./images/webp/boards-dashboard-chatbot-mobile.png"
+					alt=""
+				/>
+				<img
+					class="mx-auto hidden md:block"
+					src="./images/webp/boards-dashboard-chatbot.png"
+					alt=""
+				/>
+			</section>
+			<div class="absolute bottom-0">
+				<img
+					class="w-screen md:hidden"
+					src="./images/webp/Gradient-mobile.png"
+					alt=""
+				/>
+				<img
+					class="hidden w-screen md:block"
+					src="./images/webp/Gradient.png"
+					alt=""
+				/>
+			</div>
+			<!-- <div class="relative mx-auto w-[40rem] h-[40rem] rotate-[45deg]">
+				<div class="absolute w-[20rem] h-[20rem] bg-blue-900"></div>
+				<div class="absolute w-[20rem] h-[20rem] bg-blue -mr-4 right-0"></div>
+				<div class="absolute w-[20rem] h-[20rem] bg-teal bottom-0 -mb-8"></div>
+			</div> -->
 		</header>
 		<!-- experiments with container and screens
 			rebuild styles for button, mb in Components
 			set up plugin for order classes -->
 
-		<main class=""></main>
+		<main class="mt-40"></main>
 
 		<footer class=""></footer>
 

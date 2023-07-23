@@ -2,13 +2,10 @@ module.exports = {
 	content: ["./src/index.html", "./src/components/*.{js, jsx}"],
 	theme: {
 		screens: {
-			// tablet: "640px",
-			// laptop: "1024px",
-			// desktop: "1280px",
-			sm: "640px",
-			md: "768px",
-			lg: "1024px",
-			xl: "1280px",
+			sm: "640px", // mobile
+			md: "768px", // tablet
+			lg: "1024px", // laptop
+			xl: "1280px", // deksop
 			"2xl": "1536px",
 		},
 		colors: {
