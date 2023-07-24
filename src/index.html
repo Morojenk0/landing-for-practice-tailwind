@@ -6,10 +6,10 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>tailwind-landing-page</title>
 	</head>
-	<body class="">
+	<body>
 		<!-- md:w-11/12 lg:w-5/6 xl:w-4/6 -->
-		<header class="relative pb-5 md:pb-40">
-			<nav class="flex container items-center md:justify-between">
+		<header class="pb-5 relative md:pb-40">
+			<nav class="container flex items-center px-6 py-4 md:justify-between">
 				<a class="p-2" href="#"
 					><img class="" src="./images/svg/logo.svg" alt="logo"
 				/></a>
@@ -43,61 +43,47 @@
 						>
 					</li>
 				</ul>
+				<a class="btn-transparent ml-auto"> Login </a>
 				<button
-					class="ml-auto mr-4 h-14 w-36 border border-solid border-white bg-transparent font-graphik text-base text-white hover:underline md:m-0"
+					class="box-content h-7 w-10 ml-4 p-2 flex flex-col-reverse items-end justify-between md:hidden"
 				>
-					Login
-				</button>
-				<button
-					class="box-content flex h-7 w-10 flex-col-reverse items-end justify-between p-2 md:hidden"
-				>
-					<span class="h-[5px] w-2/5 bg-white"></span>
-					<span class="h-[5px] w-3/4 bg-white"></span>
-					<span class="h-[5px] w-full bg-white"></span>
+					<span class="w-2/5 h-[5px] bg-white"></span>
+					<span class="w-3/4 h-[5px] bg-white"></span>
+					<span class="w-full h-[5px] bg-white"></span>
 				</button>
 			</nav>
-			<section class="mt-20 container">
-				<article class="w-8/12 flex flex-col items-center text-center mx-auto">
+			<section class="container pt-14">
+				<article class="flex flex-col items-center text-center mx-auto">
 					<h1
-						class="font-graphik text-[3.25rem] font-medium leading-tight text-white lg:leading-[5.5rem] lg:text-[5rem]"
+						class="w-8/12 font-graphik text-5xl font-medium leading-tight text-white md:text-[5rem] md:leading-tight"
 					>
 						Work at the speed of thought
 					</h1>
-					<p
-						class="mt-6 text-center font-graphik text-base leading-[1.875rem] text-white"
-					>
+					<p class="w-9/12 mt-6 font-graphik text-xl leading-loose text-white">
 						Most calendars are designed for teams. Slate is designed for
 						freelancers who want a simple way to plan their schedule.
 					</p>
 					<div
-						class="flex flex-col space-y-5 mt-14 md:flex-row md:space-x-8 md:space-y-0"
+						class="mt-14 space-y-5 flex flex-col md:flex-row md:space-x-8 md:space-y-0"
 					>
-						<button
-							class="h-14 w-36 border-white bg-blue font-graphik text-base text-white hover:underline"
-						>
-							Try For Free
-						</button>
-						<button
-							class="h-14 w-36 border border-solid border-white bg-transparent font-graphik text-base text-white hover:underline"
-						>
-							Learn More
-						</button>
+						<a class="btn-blue"> Try For Free </a>
+						<a class="btn-transparent"> Learn More </a>
 					</div>
 				</article>
 			</section>
-			<section class="mt-14">
+			<div class="pt-14">
 				<img
-					class="mx-auto md:hidden w-screen"
+					class="w-screen mx-auto md:hidden"
 					src="./images/webp/boards-dashboard-chatbot-mobile.png"
 					alt=""
 				/>
 				<img
-					class="mx-auto hidden md:block"
+					class="hidden mt-9 mx-auto md:block"
 					src="./images/webp/boards-dashboard-chatbot.png"
 					alt=""
 				/>
-			</section>
-			<div class="absolute bottom-0">
+			</div>
+			<div class="bottom-0 absolute">
 				<img
 					class="w-screen md:hidden"
 					src="./images/webp/Gradient-mobile.png"
@@ -115,12 +101,91 @@
 				<div class="absolute w-[20rem] h-[20rem] bg-teal bottom-0 -mb-8"></div>
 			</div> -->
 		</header>
-		<!-- experiments with container and screens
-			rebuild styles for button, mb in Components
-			set up plugin for order classes -->
-
-		<main class="mt-40"></main>
-
+		<!-- ? comlete padding button -->
+		<main class="">
+			<section class="pt-36 pb-[7.5rem]">
+				<article class="container px-12 text-center">
+					<h2 class="font-graphik text-5xl font-normal text-white uppercase">
+						features
+					</h2>
+					<p class="mt-7 font-graphik text-xl font-normal text-white">
+						Most calendars are designed for teams. Slate is designed for
+						freelancers who want a simple way to plan their schedule.
+					</p>
+				</article>
+				<section class="container mt-7 md:mt-[5.5rem] md:flex">
+					<div class="md:w-[65%]">
+						<img
+							class="mx-auto md:hidden"
+							src="./images/webp/features-mobile.png"
+							alt=""
+						/>
+						<img
+							class="hidden md:block md:w-screen"
+							src="./images/webp/features.png"
+							alt=""
+						/>
+					</div>
+					<section
+						class="md:w-[35%] space-y-20 mt-16 flex items-center flex-col md: md:items-start md:mt-0 md:justify-center md:ml-6 md:space-y-5 lg:space-y-20"
+					>
+						<article class="max-w-[15rem]">
+							<div class="flex">
+								<img
+									class="mt-2 -ml-3 flex self-start"
+									src="./images/svg/truth.svg"
+									alt=""
+								/>
+								<h3 class="ml-3 font-graphik text-xl font-medium text-white">
+									A single source<br />
+									of truth
+								</h3>
+							</div>
+							<p class="mt-8 font-graphik text-base font-normal text-white">
+								When you add work to your Slate calendar we automatically
+								calculate useful insights
+							</p>
+						</article>
+						<article class="max-w-[15rem]">
+							<div class="flex">
+								<img
+									class="mt-2 -ml-3 flex self-start"
+									src="./images/svg/interface.svg"
+									alt=""
+								/>
+								<h3 class="ml-3 font-graphik text-xl font-medium text-white">
+									Intuitive<br />
+									interface
+								</h3>
+							</div>
+							<p class="mt-8 font-graphik text-base font-normal text-white">
+								When you add work to your Slate calendar we automatically
+								calculate useful insights
+							</p>
+						</article>
+						<article class="max-w-[15rem]">
+							<div class="flex">
+								<img
+									class="mt-2 -ml-3 flex self-start"
+									src="./images/svg/rules.svg"
+									alt=""
+								/>
+								<h3 class="ml-3 font-graphik text-xl font-medium text-white">
+									Or with rules
+								</h3>
+							</div>
+							<p class="mt-8 font-graphik text-base font-normal text-white">
+								When you add work to your Slate calendar we automatically
+								calculate useful insights
+							</p>
+						</article>
+					</section>
+				</section>
+			</section>
+			<section class="pt-36">
+				<h1 class="text-white">jqasjaksa</h1>
+			</section>
+		</main>
 		<footer class=""></footer>
 
 		<div id="root"></div>

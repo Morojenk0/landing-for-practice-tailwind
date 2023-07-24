@@ -34,5 +34,5 @@ module.exports = {
 	variants: {
 		extend: {},
 	},
-	plugins: ["prettier-plugin-tailwindcss"],
+	plugins: [],
 };

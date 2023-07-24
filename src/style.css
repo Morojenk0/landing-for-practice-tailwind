@@ -2,16 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
-/* .header {
-	background: no-repeat
-		linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #0e0e0e 66.15%);
-} */
-
-@font-face {
-	font-family: "Graphik";
-	src: url("./fonts/graphik/GraphikRegular.otf");
+@layer components {
+	.btn-transparent {
+		@apply px-9 py-5 border border-white bg-transparent font-graphik text-base text-white cursor-pointer hover:underline;
+	}
+	.btn-blue {
+		@apply px-9 py-5 border-white bg-blue font-graphik text-base text-white cursor-pointer hover:underline;
+	}
 }
-@font-face {
-	font-family: "Roboto";
-	src: url("./fonts/roboto/Roboto-Regular.ttf");
+
+@layer utilities {
+	@font-face {
+		font-family: "Graphik";
+		src: url("./fonts/graphik/GraphikRegular.otf");
+	}
+	@font-face {
+		font-family: "Roboto";
+		src: url("./fonts/roboto/Roboto-Regular.ttf");
+	}
 }
