@@ -4,10 +4,10 @@
 
 @layer components {
 	.btn-transparent {
-		@apply px-9 py-5 border border-white bg-transparent font-graphik text-base text-white cursor-pointer hover:underline;
+		@apply px-10 py-5 border border-white bg-transparent font-graphik text-base font-medium text-white cursor-pointer hover:underline;
 	}
 	.btn-blue {
-		@apply px-9 py-5 border-white bg-blue font-graphik text-base text-white cursor-pointer hover:underline;
+		@apply px-10 py-5 border-white bg-blue font-graphik text-base font-medium text-white cursor-pointer hover:underline;
 	}
 }
 
