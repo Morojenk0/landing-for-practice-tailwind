@@ -1,3 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+	.btn-transparent {
+		@apply px-10 py-5 border border-white bg-transparent font-graphik text-base font-medium text-white cursor-pointer hover:underline;
+	}
+	.btn-blue {
+		@apply px-10 py-5 border-white bg-blue font-graphik text-base font-medium text-white cursor-pointer hover:underline;
+	}
+}
+
+@layer utilities {
+	@font-face {
+		font-family: "Graphik";
+		src: url("./fonts/graphik/GraphikRegular.otf");
+	}
+	@font-face {
+		font-family: "Roboto";
+		src: url("./fonts/roboto/Roboto-Regular.ttf");
+	}
+}

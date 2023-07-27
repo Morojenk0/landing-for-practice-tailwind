@@ -1,16 +1,449 @@
-<!DOCTYPE html>
-<html lang="en" class="bg-[rgb(44,43,45)]">
+<!doctype html>
+<html lang="en" class="bg-black-900">
 	<head>
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>title</title>
+		<title>tailwind-landing-page</title>
 	</head>
 	<body>
-		<header class=""></header>
-
-		<main class=""></main>
-
+		<!-- md:w-11/12 lg:w-5/6 xl:w-4/6 -->
+		<header class="pb-5 relative md:pb-40">
+			<nav class="container flex items-center px-6 py-4 md:justify-between">
+				<a class="p-2" href="#"
+					><img class="" src="./images/icons/logo.svg" alt="logo"
+				/></a>
+				<ul class="hidden space-x-8 md:flex">
+					<li class="">
+						<a
+							class="p-2 font-graphik text-base text-white hover:underline"
+							href="#"
+							>Home</a
+						>
+					</li>
+					<li class="">
+						<a
+							class="p-2 font-graphik text-base text-white hover:underline"
+							href="#"
+							>Product</a
+						>
+					</li>
+					<li class="">
+						<a
+							class="p-2 font-graphik text-base text-white hover:underline"
+							href="#"
+							>About</a
+						>
+					</li>
+					<li class="">
+						<a
+							class="p-2 font-graphik text-base text-white hover:underline"
+							href="#"
+							>Contant</a
+						>
+					</li>
+				</ul>
+				<a class="btn-transparent ml-auto md:ml-0"> Login </a>
+				<button
+					class="box-content h-7 w-10 ml-4 p-2 flex flex-col-reverse items-end justify-between md:hidden"
+				>
+					<span class="w-2/5 h-[5px] bg-white"></span>
+					<span class="w-3/4 h-[5px] bg-white"></span>
+					<span class="w-full h-[5px] bg-white"></span>
+				</button>
+			</nav>
+			<section class="container pt-14">
+				<article class="flex flex-col items-center text-center mx-auto">
+					<h1
+						class="w-8/12 font-graphik text-5xl font-medium leading-tight text-white md:text-[5rem] md:leading-tight"
+					>
+						Work at the speed of thought
+					</h1>
+					<p
+						class="w-9/12 mt-6 font-graphik text-xl leading-loose text-white 2xl:w-7/12"
+					>
+						Most calendars are designed for teams. Slate is designed for
+						freelancers who want a simple way to plan their schedule.
+					</p>
+					<div
+						class="mt-14 space-y-5 flex flex-col md:flex-row md:space-x-8 md:space-y-0"
+					>
+						<a class="btn-blue"> Try For Free </a>
+						<a class="btn-transparent"> Learn More </a>
+					</div>
+				</article>
+			</section>
+			<div class="pt-14">
+				<img
+					class="w-screen mx-auto md:hidden"
+					src="./images/webp/boards-dashboard-chatbot-mobile.png"
+					alt=""
+				/>
+				<img
+					class="hidden mt-9 mx-auto md:block"
+					src="./images/webp/boards-dashboard-chatbot.png"
+					alt=""
+				/>
+			</div>
+			<div class="bottom-0 absolute">
+				<img
+					class="w-screen md:hidden"
+					src="./images/svg/gradient-mobile.svg"
+					alt=""
+				/>
+				<img
+					class="hidden w-screen md:block"
+					src="./images/svg/gradient.svg"
+					alt=""
+				/>
+			</div>
+			<!-- <div class="relative mx-auto w-[40rem] h-[40rem] rotate-[45deg]">
+				<div class="absolute w-[20rem] h-[20rem] bg-blue-900"></div>
+				<div class="absolute w-[20rem] h-[20rem] bg-blue -mr-4 right-0"></div>
+				<div class="absolute w-[20rem] h-[20rem] bg-teal bottom-0 -mb-8"></div>
+			</div> -->
+		</header>
+		<main class="">
+			<section class="pt-36 pb-[7.5rem]">
+				<article class="container px-12 text-center">
+					<h2 class="font-graphik text-5xl font-normal text-white uppercase">
+						features
+					</h2>
+					<p
+						class="mt-7 font-graphik text-xl font-normal text-white 2xl:w-7/12 2xl:mx-auto"
+					>
+						Most calendars are designed for teams. Slate is designed for
+						freelancers who want a simple way to plan their schedule.
+					</p>
+				</article>
+				<section class="container mt-7 md:mt-[5.5rem] md:flex">
+					<div class="md:w-[65%]">
+						<img
+							class="mx-auto md:hidden"
+							src="./images/webp/features-mobile.png"
+							alt=""
+						/>
+						<img
+							class="hidden md:block md:w-screen"
+							src="./images/webp/features.png"
+							alt=""
+						/>
+					</div>
+					<section
+						class="space-y-20 mt-16 flex items-center flex-col md:w-[35%] md:mt-0 md:ml-6 md:space-y-5 md:items-start md:justify-center lg:space-y-20"
+					>
+						<article class="max-w-[15rem]">
+							<div class="flex">
+								<img
+									class="mt-2 -ml-3 flex self-start"
+									src="./images/icons/truth.svg"
+									alt=""
+								/>
+								<h3 class="ml-3 font-graphik text-xl font-medium text-white">
+									A single source<br />
+									of truth
+								</h3>
+							</div>
+							<p class="mt-8 font-graphik text-base font-normal text-white">
+								When you add work to your Slate calendar we automatically
+								calculate useful insights
+							</p>
+						</article>
+						<article class="max-w-[15rem]">
+							<div class="flex">
+								<img
+									class="mt-2 -ml-3 flex self-start"
+									src="./images/icons/interface.svg"
+									alt=""
+								/>
+								<h3 class="ml-3 font-graphik text-xl font-medium text-white">
+									Intuitive<br />
+									interface
+								</h3>
+							</div>
+							<p class="mt-8 font-graphik text-base font-normal text-white">
+								When you add work to your Slate calendar we automatically
+								calculate useful insights
+							</p>
+						</article>
+						<article class="max-w-[15rem]">
+							<div class="flex">
+								<img
+									class="mt-2 -ml-3 flex self-start"
+									src="./images/icons/rules.svg"
+									alt=""
+								/>
+								<h3 class="ml-3 font-graphik text-xl font-medium text-white">
+									Or with rules
+								</h3>
+							</div>
+							<p class="mt-8 font-graphik text-base font-normal text-white">
+								When you add work to your Slate calendar we automatically
+								calculate useful insights
+							</p>
+						</article>
+					</section>
+				</section>
+			</section>
+			<section class="pt-36 px-6 pb-36">
+				<article class="container text-center">
+					<h2 class="font-graphik text-5xl font-normal text-white">Contents</h2>
+					<p
+						class="w-2/3 mt-7 mx-auto font-graphik text-xl font-normal text-white 2xl:w-7/12 2xl:mx-auto"
+					>
+						We focus on ergonomics and meeting you where you work. It's only a
+						keystroke away.
+					</p>
+				</article>
+				<section
+					class="mt-14 space-y-8 container flex flex-col items-center md:flex-row md:space-y-0 md:space-x-8 md:justify-center"
+				>
+					<article
+						class="w-[22rem] pt-12 px-9 pb-10 flex items-center flex-col text-center bg-white rounded-xl md:w-[40%]"
+					>
+						<h3 class="font-graphik text-xl font-bold">Work</h3>
+						<p class="mt-8 font-graphik text-base font-normal md:w-[60%]">
+							Ever wondered if you're too reliant on a client for work? Slate
+							helps you identify .
+						</p>
+						<a class="btn-blue mt-16">Sign Up</a>
+						<img
+							class="mt-[5rem] w-screen"
+							src="./images/webp/macbook.png"
+							alt=""
+						/>
+					</article>
+					<artcile
+						class="w-[22rem] pt-12 px-9 pb-10 flex items-center flex-col text-center bg-white rounded-xl md:w-[40%]"
+					>
+						<h3 class="w-1/2 font-graphik text-xl font-bold md:w-auto">
+							Design with real data
+						</h3>
+						<p class="mt-8 font-graphik text-base font-normal md:w-[60%]">
+							Ever wondered if you're too reliant on a client for work? Slate
+							helps you identify .
+						</p>
+						<a class="btn-blue mt-16 md:mt-8">Try For Free</a>
+						<img
+							class="mt-auto w-screen"
+							src="./images/webp/notifications.png"
+							alt=""
+						/>
+					</artcile>
+				</section>
+			</section>
+			<section class="container pt-36 px-6 pb-[7.5rem]">
+				<article class="text-center">
+					<h2 class="font-graphik text-5xl font-normal text-white">Gallery</h2>
+					<p
+						class="w-3/4 mt-7 mx-auto font-graphik text-xl font-normal text-white 2xl:w-7/12 2xl:mx-auto"
+					>
+						We focus on ergonomics and meeting you where you work. It's only a
+						keystroke away.
+					</p>
+				</article>
+				<section class="pt-36 px-6 pb-36">
+					<div
+						class="mx-auto gap-y-8 flex flex-col items-center lg:gap-y-11 lg:gap-x-8 lg:flex-row lg:flex-wrap lg:justify-center xl:w-[68rem]"
+					>
+						<img
+							class="w-min h-min rounded-xl lg:hidden"
+							src="./images/webp/gallery-1-mobile.png"
+							alt=""
+						/>
+						<img
+							class="w-min h-min rounded-xl lg:hidden"
+							src="./images/webp/gallery-8.png"
+							alt=""
+						/>
+						<img
+							class="w-min h-min rounded-xl lg:hidden"
+							src="./images/webp/gallery-9.png"
+							alt=""
+						/>
+						<img
+							class="w-min h-min rounded-xl lg:hidden"
+							src="./images/webp/gallery-10.png"
+							alt=""
+						/>
+						<img
+							class="hidden w-min h-min rounded-xl lg:block"
+							src="./images/webp/gallery-1.png"
+							alt=""
+						/>
+						<img
+							class="hidden w-min h-min rounded-xl lg:block"
+							src="./images/webp/gallery-2.png"
+							alt=""
+						/>
+						<img
+							class="hidden w-min h-min rounded-xl lg:block"
+							src="./images/webp/gallery-3.png"
+							alt=""
+						/>
+						<img
+							class="hidden w-min h-min rounded-xl lg:block"
+							src="./images/webp/gallery-4.png"
+							alt=""
+						/>
+						<img
+							class="hidden w-min h-min rounded-xl lg:block"
+							src="./images/webp/gallery-5.png"
+							alt=""
+						/>
+						<img
+							class="hidden w-min h-min rounded-xl lg:block"
+							src="./images/webp/gallery-6.png"
+							alt=""
+						/>
+						<img
+							class="hidden w-min h-min rounded-xl xl:block"
+							src="./images/webp/gallery-7.png"
+							alt=""
+						/>
+					</div>
+					<button class="btn-transparent mt-12 mx-auto block">See more</button>
+				</section>
+				<section class="pt-36 px-6 pb-36 container">
+					<article class="text-center">
+						<h2 class="font-graphik text-5xl font-normal text-white">
+							Partners
+						</h2>
+						<p
+							class="w-3/4 mt-7 mx-auto font-graphik text-xl font-normal text-white 2xl:w-7/12 2xl:mx-auto"
+						>
+							We focus on ergonomics and meeting you where you work. It's only a
+							keystroke away.
+						</p>
+					</article>
+					<div
+						class="mx-auto mt-12 w-[18rem] flex justify-between items-center flex-wrap gap-y-12 gap-x-12 xl:flex-row xl:gap-y-0 xl:w-[58rem]"
+					>
+						<img
+							class="w-min h-min"
+							src="./images/icons/app-store.svg"
+							alt=""
+						/>
+						<img class="w-min h-min" src="./images/icons/apiary.svg" alt="" />
+						<img class="w-min h-min" src="./images/icons/android.svg" alt="" />
+						<img
+							class="w-min h-min xl:hidden"
+							src="./images/icons/basecamp-mobile.svg"
+							alt=""
+						/>
+						<img
+							class="w-min h-min xl:hidden"
+							src="./images/icons/airbnb-mobile.svg"
+							alt=""
+						/>
+						<img
+							class="w-min h-min xl:hidden"
+							src="./images/icons/ibm-mobile.svg"
+							alt=""
+						/>
+						<img
+							class="hidden w-min h-min xl:block"
+							src="./images/icons/basecamp.svg"
+							alt=""
+						/>
+						<img
+							class="hidden w-min h-min xl:block"
+							src="./images/icons/airbnb.svg"
+							alt=""
+						/>
+						<img
+							class="hidden w-min h-min xl:block"
+							src="./images/icons/ibm.svg"
+							alt=""
+						/>
+					</div>
+					<button class="btn-transparent mt-12 mx-auto block">
+						All Partners
+					</button>
+				</section>
+				<section class="pt-36 px-6 pb-36 container xl:w-[60rem]">
+					<h2 class="text-center font-graphik text-5xl font-normal text-white">
+						Testimonials
+					</h2>
+					<section
+						class="mt-12 flex flex-col gap-y-6 md:flex-row md:flex-wrap md:gap-y-0 md:gap-x-6"
+					>
+						<article
+							class="p-10 rounded-xl border border-[#565656] md:w-[27rem] md:h-[20.5rem]"
+						>
+							<div class="flex">
+								<img class="" src="./images/webp/claire-bell.png" alt="" />
+								<h4 class="ml-6 font-graphik text-base font-bold text-white">
+									Claire Bell<br />
+									Designer
+								</h4>
+							</div>
+							<p class="mt-8 font-graphik text-base font-normal text-white">
+								Slate helps you see how many more days you need to work to reach
+								your financial goal for the month and year. Slate helps you see
+								how many more days you need to work to reach your financial goal
+								for the month and year.your financial goal for the month and
+								year.
+							</p>
+						</article>
+						<article
+							class="p-10 rounded-xl border border-[#565656] md:w-[27rem] md:h-[19rem]"
+						>
+							<div class="flex">
+								<img class="" src="./images/webp/francisco-lane.png" alt="" />
+								<h4 class="ml-6 font-graphik text-base font-bold text-white">
+									Francisco Lane<br />
+									Designer
+								</h4>
+							</div>
+							<p class="mt-8 font-graphik text-base font-normal text-white">
+								Slate helps you see how many more days you need to work to reach
+								your financial goal for the month and year. Slate helps you see
+								how many more days you need to work to reach your financial goal
+								for the month and year.your financial goal for the month and
+								year.
+							</p>
+						</article>
+						<article
+							class="p-10 mt-5 rounded-xl border border-[#565656] md:w-[27rem] md:h-[19rem]"
+						>
+							<div class="flex">
+								<img class="" src="./images/webp/ralph-fisher.png" alt="" />
+								<h4 class="ml-6 font-graphik text-base font-bold text-white">
+									Ralph Fisher<br />
+									Designer
+								</h4>
+							</div>
+							<p class="mt-8 font-graphik text-base font-normal text-white">
+								Slate helps you see how many more days you need to work to reach
+								your financial goal for the month and year. Slate helps you see
+								how many more days you need to work to reach your financial goal
+								for the month and year.your financial goal for the month and
+								year.
+							</p>
+						</article>
+						<article
+							class="p-10 rounded-xl border border-[#565656] md:w-[27rem] md:h-[19rem]"
+						>
+							<div class="flex">
+								<img class="" src="./images/webp/jorge-murphy.png" alt="" />
+								<h4 class="ml-6 font-graphik text-base font-bold text-white">
+									Jorge Murphy<br />
+									Designer
+								</h4>
+							</div>
+							<p class="mt-8 font-graphik text-base font-bold text-white">
+								Slate helps you see how many more days you need to work to reach
+								your financial goal for the month and year. Slate helps you see
+								how many more days you need to work to reach your financial goal
+								for the month and year.your financial goal for the month and
+								year.
+							</p>
+						</article>
+					</section>
+				</section>
+			</section>
+		</main>
 		<footer class=""></footer>
 
 		<div id="root"></div>
