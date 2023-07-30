@@ -1,10 +1,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@custom-media :--heading h1, h2;
-#qwe::placeholder {
-	color: red;
-}
 
 @layer components {
 	.btn-transparent {
